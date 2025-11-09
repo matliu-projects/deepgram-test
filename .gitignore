@@ -137,3 +137,19 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.venv/
+.pytest_cache/
+.mypy_cache/
+.pyre/
+.coverage
+htmlcov/
+
+# Pipenv/Poetry

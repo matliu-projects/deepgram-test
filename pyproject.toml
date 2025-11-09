@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "deepgram-test"
+version = "0.1.0"
+description = "Deepgram to Notion automation scaffolding"
+authors = ["Deepgram Test <dev@example.com>"]
+readme = "README.md"
+packages = [{ include = "*", from = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+[tool.poetry.group.dev.dependencies]
+black = "^23.7"
+ruff = "^0.0.291"
+pytest = "^7.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 88
+target-version = ["py311"]
+
+[tool.ruff]
+line-length = 88
+select = ["E", "F", "I", "B", "UP"]
+ignore = ["E501"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+addopts = "-ra"
