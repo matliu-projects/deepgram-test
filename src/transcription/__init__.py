@@ -2,7 +2,9 @@
 
 from __future__ import annotations
 
-__all__ = ["Transcriber"]
+from .models import TranscriptSegment, TranscriptionResult
+
+__all__ = ["Transcriber", "TranscriptSegment", "TranscriptionResult"]
 
 
 class Transcriber:  # pragma: no cover - placeholder

@@ -8,6 +8,8 @@ packages = [{ include = "*", from = "src" }]
 
 [tool.poetry.dependencies]
 python = "^3.11"
+requests = "^2.31.0"
+websocket-client = "^1.6.3"
 [tool.poetry.group.dev.dependencies]
 black = "^23.7"
 ruff = "^0.0.291"
